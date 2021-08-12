@@ -1,0 +1,128 @@
+/*Стили двух страниц(идентичны по структуре) Продукты и партнеры*/
+/*Все общие страницы, которые имеют блочную структуру вывода превью отдельных продуктов (все вакансии, все продукты, все услуги и т.д.) */
+/*ИЗМЕНЯТЬ С ОСТОРОЖНОСТЬЮ!!!!!!*/
+
+.main_title{
+	font-size: 32px;
+	line-height: 42px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.sub_title{
+	font-size: 16px;
+	line-height: 26px;
+	color: #fff;
+	font-weight: lighter;
+}
+.our_main_product{
+    padding-bottom: 80px;
+}
+.our_main_product .all_product{
+    float: right;
+    margin: 0 15px;
+    padding: 24px 80px;
+    color: #fff;
+    background: #ff9500;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+.our_main_product .our_main_product_title{
+    font-size: 60px;
+    max-width: 600px;
+    line-height: 60px;
+    display: block;
+    margin: 0 15px;
+    float: left;
+}
+.our_main_product .products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.our_main_product .products .product{
+	width: 22%;
+    margin: 70px 15px 0;
+    transition: all .5s linear 0s;
+    background: #fff;
+    padding: 20px 50px;
+    text-align: center;
+	box-shadow: 0 0 15px rgba(255, 149, 0, 0.4);
+}
+.our_partners .our_main_product .products .product{
+	padding: 50px 50px 0;
+}
+.our_vacancy .our_main_product .products .product .fa{
+	color: #ff4a57;
+	font-size: 90px;
+	padding-bottom: 45px;
+	transition: all .5s linear 0s;
+}
+.our_main_product .products .product h4{
+    font-size: 24px;
+	/* width: 250px; */
+    height: 80px;
+}
+.our_vacancy .our_main_product .products .product h4{
+	margin-bottom: 50px;
+}
+
+.our_main_product .products .product img{
+    width: auto;
+    height: 160px;
+	transition: all .6s ease;
+}
+.our_main_product .products .product .img{
+	background-position-y: 50%;
+    width: 150px;
+    height: 150px;
+	background-size: 100% auto;
+    background-repeat: no-repeat;
+	transition: all .6s ease;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.our_main_product .products .product p, .our_vacancy .our_main_product .products .product a{
+    color: #615c91;
+    padding: 24px 80px;
+    background: #ebebff;
+    border-radius: 30px;
+    transition: all .5s linear 0s;
+    font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*
+.our_main_product .products .product:hover a{
+    color: #fff;
+    background: #ff9500;
+}
+
+*/
+.our_main_product .products .product a {
+    color:black;
+}
+
+
+.our_main_product .products .product:hover img, .our_main_product .products .product:hover .img,  .our_vacancy .our_main_product .products .product:hover .fa{
+	transform: rotate3d(0, 1, 0, 360deg);
+}
+.our_main_product .products .product #coast{
+	margin: 20px 0;
+	color: #5f708f;
+}
+.our_main_product .products .product #coast_none{
+	display:none;
+}
+.our_main_product .products .product #coast .coast_color{
+	color: #152136;
+	font-weight: 600;
+}
+
+/*Стили для страницы статусов*/
+
+.without_bg{
+    padding: unset !important;
+    background: unset !important;
+    line-height: 23px;
+    text-align: left;
+}

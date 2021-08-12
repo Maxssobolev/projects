@@ -1,0 +1,79 @@
+.page_one{max-width: 1200px;margin:0 auto; }
+
+
+.header-nav{
+	display: flex;
+	justify-content: center;
+
+	&__link{
+		letter-spacing: 0.040em;
+		line-height: 55px;
+		font-family: Roboto;
+		font-size: 13pt;
+		color: #989696;
+		font-weight: lighter;
+		margin-right: 50px;
+		transition: 1s;
+		&:nth-child(3),&:nth-child(7){ margin-right: 0;}
+		&:hover{
+			color:#000;
+		}
+		&_logo{
+			margin: 0 60px;
+		}
+	}
+}
+
+.frst-page{
+	height: 890px;
+	display: flex;
+	justify-content: center;
+
+	
+
+
+&-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-right:22px; //небольшой костыль, чтобы выровнять относительно лого
+
+	&__caption{
+		letter-spacing: 0.020em;
+		font-size: 44pt;
+		font-family: Helvetica ;
+		color:#1d1e1f;
+	}
+	&__text{
+		letter-spacing: 0.030em;
+		font-size: 16pt;
+		line-height: 40px;
+		color: #898888;
+		font-family: Merriweather ;
+		font-weight: 300;
+		font-style: italic;
+		margin-bottom: 45px
+
+	}
+	&-button{
+		color: #1d1e1f;
+		display: block;
+		font-family: Montserrat;
+		font-size: 13pt;
+		line-height: 55px;
+		text-align: center;
+		height: 55px;
+		width: 185px;
+		border: 1px solid #121212;
+		transition: 1s;
+		&:hover{
+			color:#898888;
+			border: 1px solid #898888;
+		}
+
+
+	}
+}
+	
+}

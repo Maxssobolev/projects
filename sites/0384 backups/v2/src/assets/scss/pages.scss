@@ -1,0 +1,367 @@
+.page {
+  //Общие стили всех страниц
+  width: 75%;
+  margin: 0 auto;
+  //------------------------
+  &-admin {
+    //Стили для админ-панели
+
+    .main_post_create {
+      //Стили формы добавления записи на главную страницу
+      form {
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea {
+          width: 60%;
+          margin: 10px 0;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+
+  &-view {
+    //Стили для страницы обзора поста
+    .title {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    .date {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 0.85em;
+    }
+  }
+
+  &-subdirect {
+    //Стили для страницы обзора предмета
+    .title {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    &__linksBlock {
+      [aria-controls] {
+        width: 100%;
+        height: 59px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        color: black;
+        border: 1px dotted;
+        border-right: 1px solid gray;
+        border-left: 1px solid gray;
+        box-sizing: border-box;
+        background: white;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          text-decoration: none;
+          color: black;
+          border-right: 10px solid #ffb732;
+          border-left: 10px solid #ffb732;
+        }
+        transition: 0.2s ease-out;
+
+        span {
+          width: 100%;
+          font-size: 0.9em;
+        }
+      }
+      ol {
+        padding-left: 20px;
+        margin: 0;
+      }
+      a {
+        color: inherit;
+        &:hover {
+          text-decoration: none;
+          color: gray;
+        }
+      }
+    }
+
+    &__hwBlock {
+      [aria-controls] {
+        width: 100%;
+        height: 59px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        color: black;
+        border: 1px dotted;
+        border-right: 1px solid gray;
+        border-left: 1px solid gray;
+        box-sizing: border-box;
+        background: white;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          text-decoration: none;
+          color: black;
+          border-right: 10px solid #ffb732;
+          border-left: 10px solid #ffb732;
+        }
+        transition: 0.2s ease-out;
+
+        span {
+          width: 100%;
+          font-size: 0.9em;
+        }
+      }
+
+      #collapsed-block {
+        margin-bottom: 20px;
+      }
+      a {
+        color: inherit;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .info-block {
+        overflow: hidden;
+        margin-bottom: 10px;
+        padding: 20px;
+        box-shadow: 1px 1px 3px grey;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &__title {
+          display: block;
+          width: 100%;
+          font-size: 1.1em;
+          font-weight: bold;
+          margin-top: -5px;
+          margin-bottom: 20px;
+        }
+        &__date {
+          display: block;
+          width: 100%;
+          margin-top: 10px;
+          font-style: italic;
+          text-align: right;
+          font-size: 0.85em;
+        }
+        &__content {
+          display: block;
+          height: 100%;
+        }
+      }
+    }
+
+    &__lectorBlock {
+      [aria-controls] {
+        width: 100%;
+        height: 59px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        color: black;
+        border: 1px dotted;
+        border-right: 1px solid gray;
+        border-left: 1px solid gray;
+        box-sizing: border-box;
+        background: white;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          text-decoration: none;
+          color: black;
+          border-right: 10px solid #ffb732;
+          border-left: 10px solid #ffb732;
+        }
+        transition: 0.2s ease-out;
+      }
+
+      #collapsed-block2 {
+        margin-bottom: 20px;
+        .wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .col {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          max-width: 32%;
+          min-height: 213px;
+          margin: 5px;
+          box-shadow: 1px 1px 4px grey;
+          a {
+            color: inherit;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+          .lec_title {
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  &-home {
+    //Стили для страницы "Главная"
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    a {
+      color: inherit;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .info-block {
+      overflow: hidden;
+      margin-bottom: 10px;
+      padding: 20px;
+      box-shadow: 1px 1px 3px grey;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &__title {
+        display: block;
+        width: 100%;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-top: -5px;
+        margin-bottom: 20px;
+      }
+      &__date {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        font-style: italic;
+        text-align: right;
+        font-size: 0.85em;
+      }
+      &__content {
+        display: block;
+        height: 100%;
+      }
+    }
+  }
+
+  &-directions {
+    //Стили страницы News (Обьявления)
+    .list-item {
+      height: 50px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 15px;
+      color: black;
+      border: 1px dotted;
+      border-right: 1px solid gray;
+      border-left: 1px solid gray;
+      box-sizing: border-box;
+
+      &__date {
+        text-transform: uppercase;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: black;
+        position: relative;
+        z-index: 1;
+        line-height: 50px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: black;
+        border-right: 10px solid #ffb732;
+        border-left: 10px solid #ffb732;
+      }
+      transition: 0.2s ease-out;
+
+      &:hover {
+        cursor: pointer;
+
+        box-shadow: none;
+      }
+    }
+  }
+
+  &-homework {
+    a {
+      color: inherit;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .info-block {
+      overflow: hidden;
+      margin-bottom: 10px;
+      padding: 20px;
+      box-shadow: 1px 1px 3px grey;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &__title {
+        display: block;
+        width: 100%;
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-top: -5px;
+        margin-bottom: 20px;
+        span {
+          font-size: 0.9em;
+          text-transform: lowercase;
+          font-weight: normal;
+        }
+      }
+      &__date {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        font-style: italic;
+        text-align: right;
+        font-size: 0.85em;
+      }
+      &__content {
+        display: block;
+        height: 100%;
+      }
+    }
+  }
+}

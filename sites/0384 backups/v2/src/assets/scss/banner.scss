@@ -1,0 +1,11 @@
+.top-banner {
+  height: 1vh;
+}
+
+#banner {
+  color: white;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html lang='ru'>
+<head>
+	<title></title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	
+</head>
+<body>
+
+<div class="container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, non!</p>
+		<p>Perspiciatis repudiandae ipsum reiciendis maiores doloremque eveniet, laboriosam suscipit earum.</p>
+		<p>Deserunt nisi sequi exercitationem architecto deleniti praesentium, eligendi minus ratione.</p>
+		<p>Tempore eius incidunt ratione laboriosam neque veniam, debitis, aperiam mollitia.</p>
+		<p>Iusto voluptate voluptatem magnam dolores suscipit cupiditate et in eius.</p>
+		<p>Perferendis minus porro voluptas aut at, a autem alias excepturi!</p>
+		<p>Doloribus eaque, tempore voluptas, nesciunt asperiores harum cupiditate animi hic.</p>
+		<p>Quisquam labore enim excepturi illo explicabo cum delectus quos qui!</p>
+		<p>Quas amet eum culpa impedit omnis, dolores, laborum reiciendis sapiente.</p>
+		<p>Officiis expedita nesciunt ipsum quas non corporis sint voluptatibus eligendi.</p>
+</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	<script src="js/jquery.wait.js" type="text/javascript"></script>
+	<script>
+		var i = 0;
+
+(function() {
+
+    if (i < 10) {
+
+        console.log($(".container p")[i].classList.add('ss'));
+        i++;
+        setTimeout(arguments.callee, 1000);
+
+    } 
+
+})();
+
+
+
+	</script>
+</body>
+</html>

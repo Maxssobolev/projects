@@ -1,0 +1,26 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.aiggroup.ru$ [NC]
+ RewriteRule ^(.*)$ http://aiggroup.ru/$1 [R=301,L]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+
+Redirect 301 /author/admin/ /
+Redirect 301 /author/o-baturina/ /
+Redirect 301 /blog /
+Redirect 301 /listservice/page/2/ /
+Redirect 301 /listits/итс-ультра/ /
+Redirect 301 /wp-json/oembed/1.0/embed /
+
+Redirect 301 /listsupport/support1/ /maintenance/
+Redirect 301 /education/ /
+

@@ -1,0 +1,78 @@
+.footer  {
+  border-top:1px solid #d7d7d7; border-bottom:1px solid #d7d7d7;
+  padding: 10px 0 ;
+	margin-bottom: 20px;
+}
+.footer .col {
+	font: 24px "Century Gothic";
+	text-align: center;
+	h2{color:#968c85;
+		margin-bottom: 25px;}
+}
+.products-slider{
+	margin: 0 auto;
+	width: 640px;
+	.product{
+		//margin-right:25px;
+		position: relative;
+		width: 160px;
+		height: 200px;
+		&__img{
+
+			&:before{
+				content: 'НОВИНКА';
+				display: block;
+				position: absolute;
+				border-radius: 0 0 10px 0;
+				width: 70px;
+				height: 20px;
+				font-size: 9pt;
+				background:red;
+				color:white;
+				line-height: 20px;
+				
+			}
+		}
+		&__title{
+			font-size: 18px;
+			margin: 5px 0;
+		}
+		&__text{
+			text-align: left;
+			font-size: 11px;
+		}
+		
+	}
+}
+
+
+.advantages {
+	.item{
+		margin-left: 70px;
+	}
+	.col-auto{
+		width: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.row{
+		margin-bottom: 5px;
+	}
+	font: 24px "Century Gothic";
+	
+	h2{color:#968c85;text-align: center;
+		margin-bottom: 25px;}
+
+	.item{
+		width: 400px;
+	}
+	.item__title{
+		font-size: 14px;
+	}
+	.item__text{
+		font-size: 12px;
+	}
+
+}

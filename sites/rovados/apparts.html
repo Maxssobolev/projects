@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
+
+    <!--Заменить в вордпресс-->
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
+
+    <title>Rovados - Контакты</title>
+</head>
+
+<body>
+    <header id="navbar" class="sticky">
+        <div class="social">
+            <a href="tel:+79210955838" class="number">+7 (921) 095-58-38</a>
+            <div class="social-links">
+                <a href="" class="instagram"> <img src="assets/img/icons/instagram.svg" alt=""></a>
+                <a href="" class="telegram"> <img src="assets/img/icons/telegram.svg" alt=""></a>
+                <a href="" class="facebook"> <img src="assets/img/icons/facebook.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="main-menu">
+            <div class="logo">
+                <img src="assets/img/logo.png">
+                <div>Rovados</div>
+            </div>
+
+            <div class="menu-list">
+                <a href="/" class="menu-list__item">главная</a>
+                <a class="menu-list__item" appartments>номера</a>
+                <a href="/" class="menu-list__item">галерея</a>
+                <a href="/" class="menu-list__item">контакты</a>
+            </div>
+            <div class="menu-button">
+                <button>оставить заявку</button>
+            </div>
+
+            <div class="mobile-burger-menu">
+                <img src="assets/img/icons/burger-menu.svg" alt="">
+            </div>
+        </div>
+        <div class="external-menu">
+            <!--Открывается, если нажата стрелочка-->
+            <div class="info">
+                <div class="column">
+                    <a href="">Цены</a>
+                    <a href="">Услуги</a>
+                    <a href="">Питание</a>
+                    <a href="">Гостям</a>
+                </div>
+                <div class="column">
+                    <a href="">Акции</a>
+                    <a href="">Отзывы</a>
+                </div>
+            </div>
+            <!--Открывается, если нажать на пункт меню "Номера"-->
+            <div class="info-about-apparts">
+                <div>
+                    <div class="info-about-apparts__header">Выберите категорию:</div>
+                    <div class="info-about-apparts__content">
+                        <div class="room">
+                            <a href="">
+                                <img src="assets/img/rooms/standart.jpg" alt="">
+                                <span class="title">"Стандарт"</span>
+                            </a>
+                        </div>
+                        <div class="room">
+                            <a href="">
+                                <img src="assets/img/rooms/half-lux.jpg" alt="">
+                                <span class="title">"Полулюкс"</span>
+                            </a>
+                        </div>
+                        <div class="room">
+                            <a href="">
+                                <img src="assets/img/rooms/lux.jpg" alt="">
+                                <span class="title">"Люкс"</span>
+                            </a>
+                        </div>
+                        <div class="room">
+                            <a href="">
+                                <img src="assets/img/rooms/kitchen.jpg" alt="">
+                                <span class="title">"С кухней"</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-menu">
+                <div>
+                    <a href="/">Главная</a>
+                    <a appartments-mobile>Номера</a>
+                    <a href="">Галерея</a>
+                    <a href="">Контакты</a>
+                    <div class="breaker"></div>
+                    <a href="">Цены</a>
+                    <a href="">Услуги</a>
+                    <a href="">Питание</a>
+                    <a href="">Гостям</a>
+                    <a href="">Акции</a>
+                    <a href="">Отзывы</a>
+                </div>
+                
+            </div>
+            <div class="open"><img src="assets/img/icons/ext-menu-show.svg" alt="открыть дополнительное меню"></div>
+        </div>
+    </header>
+
+    <div class="popup-fade" modal-ticket>
+        <div class="popup">
+            <a class="popup-close" href="#"><img src="assets/img/icons/close.svg" alt=""></a>
+            <div class="header">
+                Заявка на бронирование
+            </div>
+            <div class="form">
+                <form action="/">
+                    <div class="fields">
+                        <div class="row">
+                            <div class="group">     
+                                <input type="text" name="fio" required >
+                                <label>Ф.И.О</label>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="group">     
+                                <input type="email" name="email" required>
+                                <label>Email</label>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="group">     
+                                <input type="tel" name="tel" required>
+                                <label>Тел.</label>
+                                <span class="bar"></span>
+                            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="group">     
+                                <input type="number" name="adults_amount" min='1'>
+                                <label>Кол-во взрослых</label>
+                                <span class="bar"></span>
+                                
+                            </div>
+                            <div class="group">     
+                                <input type="number" name="children_amount" min='0'>
+                                <label>Кол-во детей</label>
+                                <span class="bar"></span>
+                                
+                            </div>
+                            <div class="group">     
+                                <input type="text" name="children_age" >
+                                <label>Возраст детей</label>
+                                <span class="bar"></span>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="group">     
+                                <input type="text" name="appart_category" >
+                                <label>Категория номера (2х, 3х, 4х - местный)</label>
+                                <span class="bar"></span>
+                                
+                            </div>
+
+                            
+                            <div class="group">     
+                                <input id="date-range0" size="40" value="" name="daterange">                               
+                                <label>Выберите дату</label>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="group">     
+                                <input type="text" name="transfer" >
+                                <label>Трансфер (ж\д, аэропорт)</label>
+                                <span class="bar"></span>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="group">     
+                                <input type="text" name="comment">
+                                <label>Примечания к заявке</label>
+                                <span class="bar"></span>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" class="custom-btn btn-13">ОТПРАВИТЬ ЗАЯВКУ</button>
+                        
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <main class="page-apparts">
+        <section class="container">
+            <div class="header">
+                "СТАНДАРТНЫЕ" НОМЕРА
+            </div>
+            
+            <div class="apparts-list">
+                <div class="appart">
+                    <div class="title">
+                        <div class="name">2-х местный с балконом</div>
+                        <div class="flag"><img src="assets/img/icons/arrow-down.svg" src-open="assets/img/icons/arrow-up.svg" alt="Открыть"></div>
+                    </div>
+                    <div class="hidden-description">
+                        <div class="wrapper">
+                            <div class="short-desc">
+                                <div class="title">Описание номера: </div>
+                                <div class="text">Двуспальная или две односпальные кровати, прикроватные тумбочки, платяной шкаф, стул, на балконе стол, стул, сушилка для белья </div>
+                            </div>
+                            <div class="services">
+                                <div class="service">
+                                    <img src="assets/img/icons/services/fridge.svg" alt="">
+                                    <div>Холодильник</div>
+                                </div>
+                                <div class="service">
+                                    <img src="assets/img/icons/services/television.svg" alt="">
+                                    <div>Телевизор</div>
+                                </div>
+                                <div class="service">
+                                    <img src="assets/img/icons/services/shower.svg" alt="">
+                                    <div>Санузел</div>
+                                </div>
+                                <div class="service">
+                                    <img src="assets/img/icons/services/hair-dryer.svg" alt="">
+                                    <div>Фен</div>
+                                </div>
+                                <div class="service">
+                                    <img src="assets/img/icons/services/safe.svg" alt="">
+                                    <div>Сейф</div>
+                                </div>
+                                <div class="service">
+                                    <img src="assets/img/icons/services/plans.svg" alt="">
+                                    <div>Комната <span class="square">21м</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="read-more">
+                            <a href="/single-apart.html">ПОДРОБНЕЕ О НОМЕРЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="appart">
+                    <div class="title">
+                        <div class="name">3-х местный с балконом</div>
+                        <div class="flag"><img src="assets/img/icons/arrow-down.svg" src-open="assets/img/icons/arrow-up.svg" alt="Открыть"></div>
+                    </div>
+                    <div class="hidden-description">
+                        <div class="wrapper">
+                            <div class="short-desc">
+                                <div class="title">Описание номера: </div>
+                                <div class="text">Двуспальная или две односпальные кровати, прикроватные тумбочки, платяной шкаф, стул, на балконе стол, стул, сушилка для белья </div>
+                            </div>
+                            <div class="services">
+                                <div class="service">
+                                    <img src="assets/img/icons/services/fridge.svg" alt="">
+                                    <div>Холодильник</div>
+                                </div>
+                                <div class="service">
+                                    <img src="assets/img/icons/services/television.svg" alt="">
+                                    <div>Телевизор</div>
+                                </div>
+                                <div class="service">
+                                    <img src="assets/img/icons/services/shower.svg" alt="">
+                                    <div>Санузел</div>
+                                </div>
+                                <div class="service">
+                                    <img src="assets/img/icons/services/hair-dryer.svg" alt="">
+                                    <div>Фен</div>
+                                </div>
+                                <div class="service">
+                                    <img src="assets/img/icons/services/safe.svg" alt="">
+                                    <div>Сейф</div>
+                                </div>
+                                <div class="service">
+                                    <img src="assets/img/icons/services/plans.svg" alt="">
+                                    <div>Комната <span class="square">21м</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="read-more">
+                            <a href="/single-apart.html">ПОДРОБНЕЕ О НОМЕРЕ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div class="footer-menu">
+            <div class="col">
+                <div><a href="/">Цены</a></div>
+                <div><a href="/">Услуги</a></div>
+                <div><a href="/">Питание</a></div>
+            </div>
+            <div class="col">
+                <div><a href="/">Гостям</a></div>
+                <div><a href="/">Акции</a></div>
+                <div><a href="/">Отзывы</a></div>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <div class="header">
+                КАК НАС НАЙТИ
+            </div>
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2821.6880090754144!2d37.25655151565231!3d44.990648672936736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ee724b5ffc49c9%3A0x87cf0209e7993ea4!2z0J_RgNC40LzQvtGA0YHQutC40Lkg0L_QtdGALiwgMTYsINCS0LjRgtGP0LfQtdCy0L4sINCa0YDQsNGB0L3QvtC00LDRgNGB0LrQuNC5INC60YDQsNC5LCAzNTM0MTc!5e0!3m2!1sru!2sru!4v1624619620244!5m2!1sru!2sru"  style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            <div class="addres">
+                <img src="assets/img/icons/marker.svg" alt="marker"><span>Витязево, пер. Приморский 16</span>
+            </div>
+            <div class="tel">
+                <img src="assets/img/icons/phone.svg" alt="tel"><a href="tel:+79210955838">+7 (921) 095-58-38</a>
+            </div>
+        </div>
+    </footer>
+    <!--Заменить в вордпресс-->
+    <script src='assets/js/jquery-3.6.0.min.js'></script>
+
+
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/jquery.daterangepicker.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

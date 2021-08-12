@@ -1,0 +1,16 @@
+.col-6 {
+  padding-top: 10px;
+  border-top: 1px solid #d7d7d7;
+  font: 18px "Century Gothic"; }
+  .col-6 h2 {
+    color: red; }
+  .col-6 article {
+    padding: 5px; }
+    .col-6 article p {
+      font-size: 14px; }
+      .col-6 article p:first-child {
+        font-weight: 700; }
+
+.content-img > img {
+  width: 100%;
+  margin-bottom: 25px; }

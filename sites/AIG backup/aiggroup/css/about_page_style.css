@@ -1,0 +1,246 @@
+/*Здесь стили: страницы О нас, страницы Руководители, блочное меню О нас*/
+
+.main_title{
+	font-size: 32px;
+	line-height: 42px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.sub_title{
+	font-size: 16px;
+	line-height: 26px;
+	color: #fff;
+	font-weight: lighter;
+}
+.about_us_page .tag{
+	color: #ff9400;
+	font-size: 16px;
+	line-height: 70px;
+}
+.about_us_page  .block_title{
+	font-size: 60px;
+	color: #152136;
+	line-height: 70px;
+	font-weight: 400;
+	padding-bottom: 40px;
+}
+.about_us_page .page_block{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 100px 20px;
+} 
+.about_us_page .left, .about_us_page .right{
+	width: 50%;
+}
+.about_us_page .block_main_img{
+	height: 100%;
+	width: auto;
+}
+.about_us_page .left .block_main_img {
+	height: 90%;
+	width: auto;
+}
+#status_img{
+	width: 100%;
+    height: auto;
+    margin-top: 113px;
+}
+.about_us_page .statuses{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.about_us_page .statuses .one_status{
+	width: 50%;
+}
+.about_us_page .statuses .one_status p {
+	color: #5f708f;
+	line-height: 26px;
+	padding: 20px 30px 20px 0;
+}
+.about_us_page .statuses .one_status  img{
+	height: 60px;
+	width: auto;
+}
+.about_us_page .our_services .one_service p{
+	color: #5f708f;
+    line-height: 26px;
+	margin-bottom: 45px;
+}
+.about_us_page .our_services .one_service i{
+  display: inline-block;
+  margin-left: -1.3em; 
+  width: 1.3em; 
+  padding: 14px 10px 14px 14px;
+  border-radius: 50%;
+  color: #152136;
+  background: #fff;
+  border: 1px solid #eeeaff;
+  float: left;
+  margin-right: 20px;
+}
+.about_us_page .our_services .all_product_href{
+    color: #5f708f;
+    background: #fff;
+    padding: 20px 50px;
+    border: 1px solid #eeeaff;
+	border-radius: 35px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.about_us_page .our_services .one_service:hover> i{
+	border: none;
+	background: #ff9500;
+	color: #fff;
+	padding: 15px 11px 15px 15px;
+}
+.about_us_page .about_team  p{
+    color: #5f708f;
+    line-height: 26px;
+	margin-bottom: 30px;
+	white-space: pre-wrap;
+}
+
+@media screen and (max-width: 1200px){
+	.about_us_page .left .block_main_img {
+		height: auto;
+		width: 90%;
+	}
+	.about_us_page .block_title {
+		font-size: 50px;
+	}
+}
+@media screen and (max-width: 965px){
+	.about_us_page .block_main_img {
+		height: auto;
+		width: 90%;
+	}
+}
+@media screen and (max-width: 790px){
+	.about_us_page .block_main_img {
+		height: auto;
+		width: 90%;
+	}
+	.about_us_page .page_block {
+		display: block;
+	}
+	.about_us_page .left, .about_us_page .right {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 500px){
+	.about_us_page .statuses .one_status{
+		width: 100%;
+	}
+	.about_us_page .block_title {
+		font-size: 30px;
+    line-height: 40px;
+	}
+}
+/*Страница руководителей*/
+.leaders_page .background_peach{
+	margin-bottom: -50px;
+    padding-bottom: 50px;
+}
+.leaders_page .text_block{
+	display: flex;
+}
+.leaders_page .text_block .left{
+	flex-basis: 70%;
+}
+.leaders_page .text_block .right{
+	flex-basis: 30%;
+}
+.leaders_page .text_block .right a{
+	float: right;
+	margin-top: 19px;
+}
+.leaders_page .block_teg {
+	color: #ff9400;
+    font-size: 16px;
+    line-height: 70px;
+}
+.leaders_page .block_teg {
+	color: #ff9400;
+    font-size: 16px;
+    line-height: 70px;
+}
+.leaders_page .block_title {
+    font-size: 60px;
+    color: #152136;
+    line-height: 70px;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+.leaders_info{
+	display: flex;
+	margin-top: 50px;
+	justify-content: space-between; 
+}
+.leaders_info div{
+	text-align: center;
+	color: #152136;
+	line-height: 26px;
+}
+.leaders_info div img {
+	margin-bottom: 25px;
+}
+.leaders_info .sub_leaders{
+	margin-top: 50px;
+}
+@media screen and (max-width: 1170px){
+	.leaders_info div img {
+		width: 90%;
+	}
+	.leaders_page .block_title {
+		font-size: 50px;
+	}
+	.leaders_page .block_teg, .leaders_page .text_block {
+    padding: 0 20px;
+	}
+}
+@media screen and (max-width: 835px){
+	.leaders_page .block_title {
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
+@media screen and (max-width: 600px){
+	.leaders_page .text_block {
+		display: block;
+	}
+	.leaders_page .text_block .right a {
+		float: unset;
+	}
+	.leaders_info {
+		display: block;
+	}
+	.leaders_info div {
+		margin-bottom: 50px;
+	}
+}
+/*Блочное меню о нас*/
+
+.page_about_menu .all_item{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.page_about_menu .all_item div{
+	width: 300px;
+	text-align: center;
+	margin-bottom: 50px;
+	padding: 20px 0;
+} 
+.page_about_menu .all_item div img{
+	height: 100px;
+	width: auto;
+	margin-bottom: 15px;
+	transition: all .6s ease;
+}
+.page_about_menu .all_item div:hover{
+	background: #e9e9e9;
+}
+.page_about_menu .all_item div:hover img{
+	transform: scaleX(-1);
+}

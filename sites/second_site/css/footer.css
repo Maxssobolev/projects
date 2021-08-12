@@ -1,0 +1,39 @@
+footer .container-fluid {
+  border-top: 5px solid red; }
+.footer .col {
+	font: 24px "Century Gothic";
+	text-align: center;
+	h2{color:#968c85;}
+}
+.products-slider{
+	.product{
+		position: relative;
+		width: 160px;
+		height: 200px;
+		&__img{
+
+			&:before{
+				content: 'НОВИНКА';
+				display: block;
+				position: absolute;
+				border-radius: 0 0 10px 0;
+				width: 65px;
+				height: 20px;
+				font-size: 9pt;
+				background:red;
+				color:white;
+				line-height: 20px;
+				left: -5px;
+			}
+		}
+		&__title{
+			font-size: 18px;
+			margin: 5px 0;
+		}
+		&__text{
+			text-align: left;
+			font-size: 11px;
+		}
+		
+	}
+}

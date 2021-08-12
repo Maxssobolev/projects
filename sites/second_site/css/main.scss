@@ -1,0 +1,21 @@
+@import "null.scss";
+@import "../fonts/font.scss";
+
+
+@import "header.scss";
+@import "sidebar.css";
+
+@import "content.scss";
+
+
+
+@import "slider.scss";
+@import "banner.scss";
+@import "footer.scss";
+
+
+
+.active{
+  background: red;
+  color:white;
+}

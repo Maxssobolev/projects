@@ -1,0 +1,46 @@
+//-------------------------FONTS
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@font-face {
+ font-family: "Helvetica";
+ src: url("Helvetica.otf") format("otf");
+ font-weight: 400;
+}
+@font-face {
+ font-family: "HelveticaRoman";
+ src: url("HelveticaRoman.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('HelveticaNeueLTPro-Cn.eot?#iefix') format('embedded-opentype'),  url('HelveticaNeueLTPro-Cn.otf')  format('opentype'),
+	     url('HelveticaNeueLTPro-Cn.woff') format('woff'), url('HelveticaNeueLTPro-Cn.ttf')  format('truetype'), url('HelveticaNeueLTPro-Cn.svg#HelveticaNeueLTPro-Cn') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {//ultralight
+  font-family: 'Helvetica';
+  src: url('HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),  url('HelveticaNeueCyr-UltraLight.otf')  format('opentype'),
+	     url('HelveticaNeueCyr-UltraLight.woff') format('woff'), url('HelveticaNeueCyr-UltraLight.ttf')  format('truetype'), url('HelveticaNeueCyr-UltraLight.svg#HelveticaNeueCyr-UltraLight') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dodger';
+  src: url('/fonts/Dodger.eot?#iefix') format('embedded-opentype'),  url('/fonts/Dodger.otf')  format('opentype'),
+       url('/fonts/Dodger.woff') format('woff'), url('/fonts/Dodger.ttf')  format('truetype'), url('/fonts/Dodger.svg#Dodger') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),  url('/fonts/MyriadPro-Regular.woff') format('woff'), url('/fonts/MyriadPro-Regular.ttf')  format('truetype'), url('/fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+//------------------------

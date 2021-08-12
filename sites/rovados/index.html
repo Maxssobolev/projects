@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
+
+    <!--Заменить в вордпресс-->
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
+
+    <title>Rovados</title>
+</head>
+
+<body>
+    <!--МЕНЮ САЙТА + МОДАЛЬНОЕ ОКНО "ОСТАВИТЬ ЗАЯВКУ"-->
+    <header id="navbar" class="sticky">
+        <div class="social">
+            <a href="tel:+79210955838" class="number">+7 (921) 095-58-38</a>
+            <div class="social-links">
+                <a href="" class="instagram"> <img src="assets/img/icons/instagram.svg" alt=""></a>
+                <a href="" class="telegram"> <img src="assets/img/icons/telegram.svg" alt=""></a>
+                <a href="" class="facebook"> <img src="assets/img/icons/facebook.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="main-menu">
+            <div class="logo">
+                <img src="assets/img/logo.png">
+                <div>Rovados</div>
+            </div>
+
+            <div class="menu-list">
+                <a href="/" class="menu-list__item">главная</a>
+                <a class="menu-list__item" appartments>номера</a>
+                <a href="/" class="menu-list__item">галерея</a>
+                <a href="/contacts.html" class="menu-list__item">контакты</a>
+            </div>
+            <div class="menu-button">
+                <button>оставить заявку</button>
+            </div>
+
+            <div class="mobile-burger-menu">
+                <img src="assets/img/icons/burger-menu.svg" alt="">
+            </div>
+        </div>
+        <div class="external-menu">
+            <!--Открывается, если нажата стрелочка-->
+            <div class="info">
+                <div class="column">
+                    <a href="">Цены</a>
+                    <a href="#services" class="scrollto">Услуги</a>
+                    <a href="">Питание</a>
+                    <a href="">Гостям</a>
+                </div>
+                <div class="column">
+                    <a href="">Акции</a>
+                    <a href="">Отзывы</a>
+                </div>
+            </div>
+            <!--Открывается, если нажать на пункт меню "Номера"-->
+            <div class="info-about-apparts">
+                <div>
+                    <div class="info-about-apparts__header">Выберите категорию:</div>
+                    <div class="info-about-apparts__content">
+                        <div class="room">
+                            <a href="/apparts.html">
+                                <img src="assets/img/rooms/standart.jpg" alt="">
+                                <span class="title">"Стандарт"</span>
+                            </a>
+                        </div>
+                        <div class="room">
+                            <a href="">
+                                <img src="assets/img/rooms/half-lux.jpg" alt="">
+                                <span class="title">"Полулюкс"</span>
+                            </a>
+                        </div>
+                        <div class="room">
+                            <a href="">
+                                <img src="assets/img/rooms/lux.jpg" alt="">
+                                <span class="title">"Люкс"</span>
+                            </a>
+                        </div>
+                        <div class="room">
+                            <a href="">
+                                <img src="assets/img/rooms/kitchen.jpg" alt="">
+                                <span class="title">"С кухней"</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-menu">
+                <div>
+                    <a href="/">Главная</a>
+                    <a appartments-mobile>Номера</a>
+                    <a href="">Галерея</a>
+                    <a href="">Контакты</a>
+                    <div class="breaker"></div>
+                    <a href="">Цены</a>
+                    <a href="">Услуги</a>
+                    <a href="">Питание</a>
+                    <a href="">Гостям</a>
+                    <a href="">Акции</a>
+                    <a href="">Отзывы</a>
+                </div>
+                
+            </div>
+            <div class="open"><img src="assets/img/icons/ext-menu-show.svg" alt="открыть дополнительное меню"></div>
+        </div>
+    </header>
+    <div class="popup-fade" modal-ticket>
+        <div class="popup">
+            <a class="popup-close" href="#"><img src="assets/img/icons/close.svg" alt=""></a>
+            <div class="header">
+                Заявка на бронирование
+            </div>
+            <div class="form">
+                <form action="/">
+                    <div class="fields">
+                        <div class="row">
+                            <div class="group">     
+                                <input type="text" name="fio" required >
+                                <label>Ф.И.О</label>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="group">     
+                                <input type="email" name="email" required>
+                                <label>Email</label>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="group">     
+                                <input type="tel" name="tel" required>
+                                <label>Тел.</label>
+                                <span class="bar"></span>
+                            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="group">     
+                                <input type="number" name="adults_amount" min='1'>
+                                <label>Кол-во взрослых</label>
+                                <span class="bar"></span>
+                                
+                            </div>
+                            <div class="group">     
+                                <input type="number" name="children_amount" min='0'>
+                                <label>Кол-во детей</label>
+                                <span class="bar"></span>
+                                
+                            </div>
+                            <div class="group">     
+                                <input type="text" name="children_age" >
+                                <label>Возраст детей</label>
+                                <span class="bar"></span>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="group">     
+                                <input type="text" name="appart_category" >
+                                <label>Категория номера (2х, 3х, 4х - местный)</label>
+                                <span class="bar"></span>
+                                
+                            </div>
+
+                            
+                            <div class="group">     
+                                <input id="date-range0" size="40" value="" name="daterange">                               
+                                <label>Выберите дату</label>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="group">     
+                                <input type="text" name="transfer" >
+                                <label>Трансфер (ж\д, аэропорт)</label>
+                                <span class="bar"></span>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="group">     
+                                <input type="text" name="comment">
+                                <label>Примечания к заявке</label>
+                                <span class="bar"></span>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" class="custom-btn btn-13">ОТПРАВИТЬ ЗАЯВКУ</button>
+                        
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--[end] МЕНЮ САЙТА + МОДАЛЬНОЕ ОКНО "ОСТАВИТЬ ЗАЯВКУ" [end]-->
+
+    <main class="page-main">
+        <section slider-main >
+            <div class="overlay">
+                <div class="quadrad">
+                    <div class="sisce">
+                        <div>sinse 2010</div>
+                        <div>Krasnodar Territory</div>
+                    </div>
+                </div>
+                <div class="text-inner">HOTEL ROVADOS</div>
+            </div>
+            <div class="slider">
+                <div class="slide"><img src="assets/img/mainSlider/1.jpeg" alt=""></div>
+                <div class="slide"><img src="assets/img/mainSlider/4.jpeg" alt=""></div>
+                <div class="slide"><img src="assets/img/mainSlider/5.jpeg" alt=""></div>
+                <div class="slide"><img src="assets/img/mainSlider/6.jpeg" alt=""></div>
+            </div>
+        </section>
+
+        <section mobile-ticket>
+            <div class="menu-button-mobile">
+                <button>оставить заявку</button>
+            </div>
+        </section>
+        <a id='services'></a>
+        <section services class="container">
+            
+            <div class="header">
+                Что мы предлагаем?
+            </div>
+            <div class="services wow fadeInUp"  data-wow-duration="2s">
+                <div class="service">
+                    <img src="assets/img/icons/services/swimming-pool.svg" alt="Бассейн">
+                    <div>
+                        Бассейн
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="assets/img/icons/services/swimming-pool.svg" alt="Бассейн">
+                    <div>
+                        Игровая для детей
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="assets/img/icons/services/swimming-pool.svg" alt="Бассейн">
+                    <div>
+                        Бассейн
+                    </div>
+                </div>
+
+                <div class="service" for-add-payment>
+                    <img src="assets/img/icons/services/swimming-pool.svg" alt="Бассейн">
+                    <div>
+                        Бассейн
+                    </div>
+                </div>
+                <div class="service" for-add-payment>
+                    <img src="assets/img/icons/services/swimming-pool.svg" alt="Бассейн">
+                    <div>
+                        Бассейн
+                    </div>
+                </div>
+                <div class="service" for-add-payment>
+                    <img src="assets/img/icons/services/swimming-pool.svg" alt="Бассейн">
+                    <div>
+                        Бассейн
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section near-us class="container">
+            <div class="header">
+                Рядом с нами 
+            </div>
+            <div class="slider wow fadeInUp" data-wow-duration="1.5s">
+                <div class="slide"><img src="assets/img/near-us/1.jpg"></div>
+                <div class="slide"><img src="assets/img/near-us/2.jpg"></div>
+                <div class="slide"><img src="assets/img/near-us/3.jpg"></div>
+                <div class="slide"><img src="assets/img/near-us/4.jpg"></div>
+                <div class="slide"><img src="assets/img/near-us/5.jpg"></div>
+            </div>
+            <div class="description wow fadeInUp" data-wow-duration="1.5s">
+                <div> В пяти минутах от нас:</div>
+                <div class="row">
+                    <div class="col">
+                        <div> ‣ парк аттракционов</div>
+                        <div> ‣ дельфинарий</div>
+                        <div> ‣ рестораны</div>
+                        <div> ‣ бары</div>
+                    </div>
+                    <div class="col">
+                        <div> ‣ аквапарк Олимпия</div>
+                        <div> ‣ спорткомплекс</div>
+                        <div> ‣ боулинг.</div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section about-us class="container">
+            <div class="header" >О нас</div>
+            <div class="description" >
+                    <p class="wow fadeInRight" data-wow-duration="1.5s">Современный Гостевой Дом «Rovados» расположен в тихом зеленом переулке, лишенном посторонних глаз и шума, курортного района Витязево города Анапа, в 10-15 минутах ходьбы до лучшего песчаного пляжа.</p>
+                    <p class="wow fadeInLeft" data-wow-duration="1.5s">Гостевой дом включает в себя два корпуса, огороженную территорию, на которой находятся оборудованные для отдыха на свежем воздухе места, детскую площадку и два бассейна с подогревом.
+                    Фасад гостевого дома выходит на тихий зеленый переулок Приморский.</p>
+                    <p class="wow fadeInRight" data-wow-duration="2s">Недалеко от гостевого дома расположен развлекательный центр с боулингом, спортивный центр, все необходимые объекты инфраструктуры: магазины, аптеки, банкоматы, места остановки общественного транспорта и т.д.</p>
+                    <p class="wow fadeInLeft" data-wow-duration="2s">В пределах 5 минут ходьбы находится бульвар «Паралия», на котором есть все необходимые условия для отдыха и развлечений детей, семейных пар, молодежи. На бульваре расположены рестораны, кафе, точки розничной торговли продуктовыми и промышленными товарами, рынок, сувенирные лавки, места массового развлечения. Рядом с бульваром расположены парки с аттракционами, аквапарк «Олимпия» и дельфинарий «Немо».</p>
+                
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div class="footer-menu">
+            <div class="col">
+                <div><a href="/">Цены</a></div>
+                <div><a href="#services" class="scrollto">Услуги</a></div>
+                <div><a href="/">Питание</a></div>
+            </div>
+            <div class="col">
+                <div><a href="/">Гостям</a></div>
+                <div><a href="/">Акции</a></div>
+                <div><a href="/">Отзывы</a></div>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <div class="header">
+                КАК НАС НАЙТИ
+            </div>
+            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2821.6880090754144!2d37.25655151565231!3d44.990648672936736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ee724b5ffc49c9%3A0x87cf0209e7993ea4!2z0J_RgNC40LzQvtGA0YHQutC40Lkg0L_QtdGALiwgMTYsINCS0LjRgtGP0LfQtdCy0L4sINCa0YDQsNGB0L3QvtC00LDRgNGB0LrQuNC5INC60YDQsNC5LCAzNTM0MTc!5e0!3m2!1sru!2sru!4v1624619620244!5m2!1sru!2sru"  style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            <div class="addres">
+                <img src="assets/img/icons/marker.svg" alt="marker"><span>Витязево, пер. Приморский 16</span>
+            </div>
+            <div class="tel">
+                <img src="assets/img/icons/phone.svg" alt="tel"><a href="tel:+79210955838">+7 (921) 095-58-38</a>
+            </div>
+        </div>
+    </footer>
+    <!--Заменить в вордпресс-->
+    <script src='assets/js/jquery-3.6.0.min.js'></script>
+
+    <script src="assets/slick/slick.js" type="text/javascript"></script>
+    <script src="assets/js/slider.js"></script>
+
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/jquery.daterangepicker.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

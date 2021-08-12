@@ -1,0 +1,8 @@
+docx2txt==0.8
+python_docx==0.8.10
+pdfminer.six==20181108
+openpyxl==3.0.3
+docx==0.2.4
+pdfminer==20191125
+progressbar33==2.4
+PyPDF2==1.26.0

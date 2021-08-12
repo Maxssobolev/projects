@@ -1,0 +1,140 @@
+.page-five{
+	min-height: 1115px;
+}
+
+.page-five-content{
+	margin-bottom: 100px;
+	margin-right: 22px;//тот самый костыль
+	text-align: center;
+}
+
+.page-five-title{
+		letter-spacing: 0.020em;
+		font-size: 34pt;
+		font-family: Helvetica;
+		font-weight: 400;
+		color:#000;
+
+}
+.page-five-subtitle{
+		letter-spacing: 0.020em;
+		font-size: 16pt;
+		line-height: 40px;
+		color: #777777;
+		font-family: Merriweather ;
+		font-weight: 300;
+		font-style: italic;
+		
+}
+//-------------------
+
+.contacts{
+	display: flex;
+	justify-content: center;
+	font-size: 12pt;
+	color: #898888;
+	&-phone{
+		&_link{
+			color: #898888;
+		}
+		position: relative;
+		&:after{
+			content: '';
+			height: 30px;
+			width: 30px;
+			position: absolute;
+			top:-35px;	
+			left:35px;
+			background:url("../img/icons/phone.svg") no-repeat;
+		}	
+	}
+	&-adress{
+		&>input{
+	font-size: 12pt;
+	color: #898888;
+		}
+		position: relative;
+		margin: 0 100px 0 130px;
+		&:after{
+			content: '';
+			display: block;
+			height: 30px;
+			width: 30px;
+			position: absolute;
+			top:-35px;
+			left:90px;	
+			background:url("../img/icons/PIN 2.svg") no-repeat;
+		}
+	}
+	&-email{
+		&_link{
+			color: #898888;
+		}
+		position: relative;
+		&:after{
+			content: '';
+			height: 30px;
+			width: 30px;
+			position: absolute;
+			top:-30px;	
+			left:70px;
+			background:url("../img/icons/MAIL.svg") no-repeat;
+		}
+	}
+	margin-bottom: 150px;
+}
+.page-five-form{
+max-width: 770px;
+margin: 0 auto;
+
+&__pole{
+	width: 770px;
+	height: 50px;
+	border: 1px solid #999999;
+	margin-bottom: 20px;
+	font-family: Helvetica;
+	font-size: 15pt;
+	color: #898888;
+	font-weight: 100;
+
+}
+&__area{
+	height: 195px;
+	width: 770px;
+	border: 1px solid #999999;
+	margin-bottom: 20px;
+
+	}
+&__button{
+	width: 770px;
+	height: 50px;
+	cursor: pointer;
+	background:#000;
+	color: #fff;
+	font-family: Helvetica;
+	font-size: 17px;
+
+
+	}
+}
+textarea {
+	resize: none;
+	padding: 20px;
+	font-family: Helvetica;
+	font-size: 15pt;
+	color: #898888;
+	font-weight: 100;
+
+}
+	input{
+		text-align: center;
+	}
+
+.copyright{
+	font-family: Helvetica;
+	font-size: 14pt;
+	font-weight: 200;
+	color: #898888;
+	text-align: center;
+	margin-bottom: 10px;
+}

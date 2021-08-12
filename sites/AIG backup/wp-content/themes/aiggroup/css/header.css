@@ -1,0 +1,214 @@
+.main_header, .main_phone_block{
+	display: flex;
+}
+.main_header{
+	padding: 20px 0;
+	width: 100%;
+}
+.main_logo{
+	height: 75px;
+	width: auto;
+	margin-right: 30px;
+	padding: 20px 0;
+}
+
+.main_header .menu #menu-main_menu{
+	border-top: 2px solid #c4c4c4;
+	padding: 17px 0;
+	padding-bottom: 21px;
+	margin-bottom: 0;
+}
+.main_header .menu #menu-main_menu, .main_header .menu #menu-main_menu .sub-menu {
+	list-style: none;
+	padding-left: 0;
+}
+.main_header .menu #menu-main_menu .sub-menu li{
+	padding-bottom: 15px;
+}
+.main_header .menu #menu-main_menu li a{
+	color: #505051;
+	text-transform: uppercase;
+}
+
+.main_header .menu #menu-main_menu li{
+	position: relative;
+}
+
+.main_header .menu #menu-main_menu li:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #FF9602;
+	position: absolute;
+	transition: width .3s;
+	bottom: -5px;
+}
+
+.main_header .menu #menu-main_menu li:hover:after{
+	width: 100%;
+} 
+
+.main_header .menu #menu-main_menu li:hover  a{
+	font-weight: bold;
+}
+.main_header .menu #menu-main_menu .menu-item-has-children .sub-menu{
+	display: none;
+	padding-left: 0;
+	background: #fff;
+    padding: 10px 10px 0 0;
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.5);
+}
+.main_header .menu #menu-main_menu .menu-item-has-children:after{
+	content: '\f107';
+	font-family: FontAwesome;
+	color: #ff9500;
+	font-weight: 600;
+}
+.main_header .menu #menu-main_menu .menu-item-has-children:hover .sub-menu{
+	display: block;
+	position: absolute;
+}
+.main_header .menu #menu-main_menu .menu-item-has-children .sub-menu li a:before{
+	content: '\f054';
+	font-family: FontAwesome;
+	color: #ff9500;
+	font-size: 18px;
+	padding: 0 5px;
+}
+.main_header .menu #menu-main_menu, .main_header .main_phone_block{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.main_header .site_info {
+	display: block;
+	width: 100%;
+}
+
+.main_header .site_info .descript {
+	display: block;
+	float: left;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 35px;
+}
+
+
+.main_header .site_info .info_right {
+	display: block;
+	float: right;
+}
+
+.main_header .site_info .info_right .info_phone {
+	display: flex;
+	align-items: center;
+}
+.social{
+	width:30px;
+}
+
+.main_header .site_info .info_right .info_phone a{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 3px 5px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #292929;
+}
+
+.main_header .site_info .info_right .info_phone a.numb:hover {
+	text-decoration: underline;
+}
+
+.main_header .site_info .info_right .info_phone a.tg {
+	width: 29px;
+	height: 29px;
+	background: url(img/tg.png) no-repeat center;
+}
+
+.main_header .site_info .info_right .info_phone a.wa {
+	width: 29px;
+	height: 29px;
+	background: url(img/watsapp.png) no-repeat center;
+}
+.main_header .site_info .info_right .info_phone a.tg:hover,
+.main_header .site_info .info_right .info_phone a.wa:hover {
+	opacity: .7;
+}
+
+.main_header .site_info .info_right a.sb_call {
+	display: block;
+	text-align: center;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #fff;
+	margin-top: 5px;
+	border-radius: 38px;
+	background: #FF9602;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+
+@media screen and (max-width: 1200px){
+	.main_logo {
+		margin-left: 10px;
+	}
+}
+/*Мобильное меню*/
+.mobile_header{
+	display: none;
+}
+.mobile_header .fa{
+	float: right;
+    font-size: 65px;
+    padding: 15px 10px 0;
+	cursor: pointer;
+}
+.mobile_header .main_logo {
+    height: 60px;
+	padding: 15px 0;
+}
+.mobile_header .mobile_menu {
+	display: none;
+}
+.mobile_header .mobile_menu #menu-main_menu-1{
+	position: absolute;
+}
+.mobile_header .mobile_menu #menu-main_menu-1, .mobile_header .mobile_menu #menu-main_menu-1 .sub-menu{
+	margin: 0;
+	list-style:none;
+	width: 100%;
+	background: #fff;
+	text-align: right;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
+	z-index: 50;
+}
+.mobile_header .mobile_menu #menu-main_menu-1 a, .mobile_header .mobile_menu #menu-main_menu-1 .sub-menu a{
+	text-transform: uppercase;
+	color: #152136;
+	font-size: 22px;
+}
+.mobile_header .mobile_menu #menu-main_menu-1 .sub-menu a{
+	font-size: 16px;
+}
+.mobile_header .mobile_menu #menu-main_menu-1 li, .mobile_header .mobile_menu #menu-main_menu-1 .sub-menu li{
+	padding: 10px;
+}
+.mobile_header .fa:active .mobile_menu{
+	display: block;	
+}
+@media screen and (max-width: 800px){
+	.mobile_header{
+		display: block;
+	}
+	.main_header{
+		display: none;
+	}
+}

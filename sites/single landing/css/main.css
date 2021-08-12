@@ -1,0 +1,302 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+/*--------------------*/
+::-webkit-scrollbar {
+  /* chrome based */
+  width: 0px;
+  /* ширина scrollbar'a */
+  background: transparent;
+  /* опционально */ }
+
+html {
+  -ms-overflow-style: none;
+  /* IE 10+ */
+  scrollbar-width: none;
+  /* Firefox */ }
+
+/* 
+Ex: 
+@include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+*/
+/*
+@font-face {
+ font-family: "Helvetica";
+ src: url("Helvetica.otf") format("otf");
+ font-weight: 400;
+}
+@font-face {
+ font-family: "HelveticaRoman";
+ src: url("HelveticaRoman.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('HelveticaNeueLTPro-Cn.eot?#iefix') format('embedded-opentype'),  url('HelveticaNeueLTPro-Cn.otf')  format('opentype'),
+	     url('HelveticaNeueLTPro-Cn.woff') format('woff'), url('HelveticaNeueLTPro-Cn.ttf')  format('truetype'), url('HelveticaNeueLTPro-Cn.svg#HelveticaNeueLTPro-Cn') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {//ultralight
+  font-family: 'Helvetica';
+  src: url('HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),  url('HelveticaNeueCyr-UltraLight.otf')  format('opentype'),
+	     url('HelveticaNeueCyr-UltraLight.woff') format('woff'), url('HelveticaNeueCyr-UltraLight.ttf')  format('truetype'), url('HelveticaNeueCyr-UltraLight.svg#HelveticaNeueCyr-UltraLight') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Dodger';
+  src: url('/fonts/Dodger.eot?#iefix') format('embedded-opentype'),  url('/fonts/Dodger.otf')  format('opentype'),
+       url('/fonts/Dodger.woff') format('woff'), url('/fonts/Dodger.ttf')  format('truetype'), url('/fonts/Dodger.svg#Dodger') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),  url('/fonts/MyriadPro-Regular.woff') format('woff'), url('/fonts/MyriadPro-Regular.ttf')  format('truetype'), url('/fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+//------------------------
+*/
+.header {
+  font-family: 'Open Sans';
+  background: url("../img/header-banner.jpg") no-repeat;
+  background-size: 100%; }
+  .header-logo {
+    text-align: center;
+    padding: 70px 0 35px 0; }
+    .header-logo img {
+      max-width: 273px;
+      max-height: 273px;
+      pointer-events: none; }
+  .header-title {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-size: 50pt;
+    padding: 35px; }
+    .header-title span {
+      font-weight: 700; }
+  .header-form {
+    border-radius: 3px;
+    padding: 30px 0 25px 0;
+    margin: 0 auto;
+    background: #fff;
+    color: #b4adad;
+    width: 334px;
+    height: 335px;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.28); }
+    .header-form form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .header-form input[type='text'] {
+      height: 35px;
+      width: 265px;
+      border-radius: 3px;
+      margin-bottom: 25px;
+      padding: 15px;
+      border: 1px solid #e8e8e8; }
+    .header-form__pictures {
+      margin-bottom: 25px;
+      height: 87px;
+      overflow: hidden; }
+      .header-form__pictures img {
+        float: left;
+        margin: 0;
+        padding: 0; }
+        .header-form__pictures img:last-child {
+          float: none;
+          margin-top: -44px;
+          float: right; }
+    .header-form p {
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 30px; }
+    .header-form input[type='submit'] {
+      width: 192px;
+      height: 45px;
+      background: #227dd3;
+      font-size: 31.35px;
+      color: #fff;
+      text-transform: uppercase;
+      border-radius: 2px; }
+
+.page_one {
+  margin: 60px 0 110px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .page_one .box {
+    font: 27.3pt "Open Sans"; }
+    .page_one .box .info .title {
+      font-weight: 600; }
+    .page_one .box .info .text {
+      color: #4f4e4e;
+      font-size: 14pt; }
+
+.page_two {
+  z-index: 10;
+  position: relative;
+  height: 1000px;
+  background: #5fc18b; }
+  .page_two .container {
+    max-width: 650px; }
+    .page_two .container .row {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 85px 0 0 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .page_two .container .row .col {
+        line-height: 23pt;
+        color: #fff;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+        text-align: center;
+        margin-bottom: 35px;
+        font-family: 'Open Sans'; }
+        .page_two .container .row .col .title {
+          font-size: 40px;
+          font-weight: 600; }
+        .page_two .container .row .col .text {
+          font-size: 14px;
+          text-align: left; }
+          .page_two .container .row .col .text p {
+            margin-bottom: 60px; }
+  .page_two .separator {
+    bottom: -4px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%; }
+
+.page_three {
+  background-color: #44a36f; }
+  .page_three .container .row {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+    .page_three .container .row .col-auto {
+      margin-right: 30px; }
+      .page_three .container .row .col-auto .img {
+        position: relative; }
+        .page_three .container .row .col-auto .img:after {
+          content: '';
+          background-image: url("../img/comp.png");
+          background-repeat: no-repeat;
+          position: absolute;
+          width: 500px;
+          height: 1000px;
+          left: 230px; }
+    .page_three .container .row .col {
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto; }
+      .page_three .container .row .col .row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+        align-items: space-around; }
+      .page_three .container .row .col .info {
+        max-width: 500px;
+        color: #fff;
+        font-family: 'Open Sans'; }
+        .page_three .container .row .col .info .title {
+          font-size: 40px;
+          font-weight: 600;
+          margin-bottom: 15px; }
+        .page_three .container .row .col .info .text {
+          line-height: 23px;
+          font-size: 14px;
+          text-align: left; }
+          .page_three .container .row .col .info .text p {
+            margin-bottom: 30px; }
+        .page_three .container .row .col .info .button {
+          font-size: 27px;
+          padding: 12px 35px;
+          border: 3px solid white;
+          height: 57px;
+          width: 200px;
+          border-radius: 10px; }
+          .page_three .container .row .col .info .button a {
+            text-align: center;
+            color: #fff; }

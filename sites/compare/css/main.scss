@@ -1,0 +1,57 @@
+@import "null.scss"; //файл обнуления стилей
+@import "mixins.scss"; //файл с миксинами и функциями
+//@import "../fonts/font.scss"; //файл с подключением шрифтов
+
+body{
+	min-height: 1000px;
+}
+
+.product-card{
+	width: 200px;
+	height: 420px;
+	border: 1px solid #fff0e6;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 16px;
+
+	&__img{
+		width: 100%;
+		height: 250px;
+		background:#e6e6e6;
+		border-radius: 5px;
+	
+		img{width: 100%;}
+	}
+
+	&__desc{
+		padding: 20px 0;
+		
+		
+	}
+	&__price{
+		text-align: right;
+		margin-bottom: 15px;
+	}
+	.pick{
+		width: 140px;
+		height: 40px;
+		border: 3px solid #eccdba;
+		text-align: center;
+		border-radius: 30px;
+		font-size: 16px;
+		font-family: "Myriad Pro";
+	}
+}
+
+.chracteristicks{
+	.list-title{
+		display: inline-block;
+		margin-bottom: 20px;
+		color: black;
+		font-weight: bold;
+	}
+	.col{
+		text-align: left;
+		margin-bottom: 20px;
+	}
+}

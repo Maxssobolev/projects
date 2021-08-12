@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300i,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+/*--------------------*/
+/* 
+Ex: 
+@include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+*/
+@font-face {
+  font-family: "Helvetica";
+  src: url("Helvetica.otf") format("otf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "HelveticaRoman";
+  src: url("HelveticaRoman.ttf") format("ttf"); }
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("HelveticaNeueLTPro-Cn.eot?#iefix") format("embedded-opentype"), url("HelveticaNeueLTPro-Cn.otf") format("opentype"), url("HelveticaNeueLTPro-Cn.woff") format("woff"), url("HelveticaNeueLTPro-Cn.ttf") format("truetype"), url("HelveticaNeueLTPro-Cn.svg#HelveticaNeueLTPro-Cn") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("HelveticaNeueCyr-UltraLight.eot?#iefix") format("embedded-opentype"), url("HelveticaNeueCyr-UltraLight.otf") format("opentype"), url("HelveticaNeueCyr-UltraLight.woff") format("woff"), url("HelveticaNeueCyr-UltraLight.ttf") format("truetype"), url("HelveticaNeueCyr-UltraLight.svg#HelveticaNeueCyr-UltraLight") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Dodger';
+  src: url("/fonts/Dodger.eot?#iefix") format("embedded-opentype"), url("/fonts/Dodger.otf") format("opentype"), url("/fonts/Dodger.woff") format("woff"), url("/fonts/Dodger.ttf") format("truetype"), url("/fonts/Dodger.svg#Dodger") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/MyriadPro-Regular.woff") format("woff"), url("/fonts/MyriadPro-Regular.ttf") format("truetype"), url("/fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+::-webkit-scrollbar {
+  /* chrome based */
+  width: 0px;
+  /* ширина scrollbar'a */
+  background: transparent;
+  /* опционально */ }
+
+html {
+  font-family: 'Roboto Mono';
+  -ms-overflow-style: none;
+  /* IE 10+ */
+  scrollbar-width: none;
+  /* Firefox */ }
+
+.wrapper {
+  overflow: hidden; }
+  .wrapper .photoapp {
+    height: 100vh;
+    position: relative; }
+    .wrapper .photoapp svg {
+      margin-right: -50%;
+      width: 450px;
+      height: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform-origin: 48% -5%;
+      -ms-transform-origin: 48% -5%;
+      transform-origin: 48% -5%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-animation: rotate 2s ease-out forwards;
+      animation: rotate 2s ease-out forwards; }
+    .wrapper .photoapp .vspishka {
+      position: absolute;
+      margin-right: -50%;
+      top: 52.8%;
+      left: 52.7%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      opacity: 0;
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+      -webkit-animation: flash .5s ease-in 2s forwards;
+      animation: flash .5s ease-in 2s forwards;
+      background: #fff; }
+
+@-webkit-keyframes rotate {
+  from { }
+  to {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); } }
+
+@keyframes rotate {
+  from { }
+  to {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); } }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1; }
+  20% {
+    width: 100px;
+    height: 100px;
+    opacity: 0.9; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 200vw;
+    height: 400vh; } }
+
+@keyframes flash {
+  0% {
+    opacity: 1; }
+  20% {
+    width: 100px;
+    height: 100px;
+    opacity: 0.9; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 200vw;
+    height: 400vh; } }
+
+.first_block {
+  background: rgba(223, 223, 223, 0.3);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Segoe UI';
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .first_block .zavesa {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    -webkit-animation: opac 2s cubic-bezier(0.47, -0.44, 0.49, 1.46) 3.5s forwards;
+    animation: opac 2s cubic-bezier(0.47, -0.44, 0.49, 1.46) 3.5s forwards; }
+  .first_block h1 {
+    font-weight: 100;
+    font-size: 60px; }
+  .first_block .container img {
+    margin-bottom: 30px; }
+  .first_block .container .row {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 0px; }
+  .first_block .container p {
+    font-weight: 100;
+    font-size: 30px; }
+
+@-webkit-keyframes opac {
+  0% { }
+  100% {
+    opacity: 0; } }
+
+@keyframes opac {
+  0% { }
+  100% {
+    opacity: 0; } }
+
+.second_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../img/s1200.jpg");
+  background-size: cover; }
+  .second_block .info {
+    overflow: hidden;
+    height: 100%;
+    max-width: 30%;
+    margin-right: 10%;
+    background: rgba(178, 169, 162, 0.3);
+    padding: 30px 25px;
+    color: #221b2b; }
+    .second_block .info h2 {
+      font-size: 25px;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 25px; }
+    .second_block .info .text {
+      word-spacing: 7px;
+      line-height: 25px;
+      font-size: 20px;
+      text-align: justify; }
+
+.third_block {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  text-align: justify;
+  padding: 50px; }
+  .third_block img {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    opacity: 0;
+    max-height: 25%; }
+
+.fourth_block .cyrcle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  line-height: 100px;
+  text-align: center;
+  border: 1px solid black; }
+
+.fourth_block .container .row {
+  padding: 50px; }
+
+.fourth_block .container .row:first-child {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.fourth_block .container .row:nth-child(2) {
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }

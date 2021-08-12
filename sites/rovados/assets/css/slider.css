@@ -1,0 +1,124 @@
+[slider-main] .slider {
+  width: 100%;
+}
+[slider-main] .slide img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+[slider-main] .slick-dots {
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 50px 0;
+  list-style-type: none;
+}
+[slider-main] .slick-dots li {
+  margin: 0 20px;
+}
+[slider-main] .slick-dots button {
+  display: block;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: white;
+  text-indent: -9999px;
+}
+@media (max-width: 768px) {
+  [slider-main] .slick-dots button {
+    width: 20px;
+    height: 20px;
+  }
+}
+[slider-main] .slick-dots li.slick-active button {
+  background-color: black;
+  border: 1px solid white;
+}
+
+[near-us] .slider {
+  width: 100%;
+}
+[near-us] .slide img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 70vh;
+}
+[near-us] .slick-dots {
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 50px 0;
+  list-style-type: none;
+}
+[near-us] .slick-dots li {
+  margin: 0 20px;
+}
+[near-us] .slick-dots button {
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: white;
+  text-indent: -9999px;
+}
+@media (max-width: 768px) {
+  [near-us] .slick-dots button {
+    width: 20px;
+    height: 20px;
+  }
+}
+[near-us] .slick-dots li.slick-active button {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.page-single-appart .slider {
+  width: 100%;
+}
+.page-single-appart .slide img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 70vh;
+}
+.page-single-appart .slick-dots {
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 50px 0;
+  list-style-type: none;
+}
+.page-single-appart .slick-dots li {
+  margin: 0 20px;
+}
+.page-single-appart .slick-dots button {
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: white;
+  text-indent: -9999px;
+}
+@media (max-width: 768px) {
+  .page-single-appart .slick-dots button {
+    width: 20px;
+    height: 20px;
+  }
+}
+.page-single-appart .slick-dots li.slick-active button {
+  background-color: black;
+  border: 1px solid white;
+}

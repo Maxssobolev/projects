@@ -1,0 +1,68 @@
+.page-three{
+	min-height: 730px;
+	display: flex;
+	flex-direction: column;
+	
+	
+}
+//----------------------------
+.page-three-content{
+	margin: 92px 0 220px 0;
+	text-align: center;
+}
+
+.page-three-title{
+		letter-spacing: 0.020em;
+		font-size: 34pt;
+		font-family: Helvetica;
+		color:#1d1e1f;
+}
+.page-three-subtitle{
+		letter-spacing: 0.020em;
+		font-size: 16pt;
+		line-height: 40px;
+		color: #898888;
+		font-family: Merriweather ;
+		font-weight: 300;
+		font-style: italic;
+		margin-bottom: 45px
+}
+//----------------------------
+.page-three-cards{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.card{
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+	&_atop{margin-top: -95px;}
+
+	text-align: center;
+
+	&__avatar{
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+		margin-bottom: 25px;
+		&>img{
+			max-width: 100%;
+		}
+	}
+	&__holder{
+		font-family: HelveticaRoman;
+		line-height: 26px;
+		font-size: 24px;
+		letter-spacing: 0.020em;
+		color: #464646;
+	}
+	&__info{
+		font-family: HelveticaRoman;
+		color: #b3b3b3;
+		font-size: 13px;
+		letter-spacing: 0.020em;
+		line-height: 26px;
+		max-width: 200px;
+	}
+}

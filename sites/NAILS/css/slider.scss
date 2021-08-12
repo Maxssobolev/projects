@@ -1,0 +1,141 @@
+
+button:active, button:focus {
+  outline: none;
+}
+.slick-list{
+	overflow: hidden;
+}
+.slick-track{
+	display: flex;
+}
+.slick-dots {
+	display: flex;
+	margin: 0;
+	
+	
+    
+    li button{
+		padding: 0 10px;
+		background:transparent;
+	}
+    @media (max-width: 750px){
+                li:nth-child(3):after {
+                    content: "";
+                    display: inline-block;
+                    height: 20px;
+                    width: 100%;
+                }
+            }
+
+
+}
+
+
+
+
+.slick-slider{
+	position: relative;
+}
+
+$slick-font-path: "./fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "./" !default;
+$slick-arrow-color: red !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 30%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    &:hover, &:focus {
+        outline: none;
+        background: transparent;
+        color: transparent;
+        &:before {
+            opacity: $slick-opacity-on-hover;
+        }
+    }
+   
+    &:before {
+        font-family: $slick-font-family;
+        font-size: 20px;
+        line-height: 1;
+        color: $slick-arrow-color;
+        opacity: $slick-opacity-default;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+/*
+.slick-prev {
+    left: -100px;
+    [dir="rtl"] & {
+        left: auto;
+        right: -25px;
+    }
+    &:before {
+        content: '';
+        background:url('../img/redarrow.png');
+        display: block;
+        height: 65px;
+        width: 35px;
+        transition: 0.3s;
+
+         
+    }
+    &.slick-disabled:before {
+        content: '';
+        background:url('../img/left-disable.png');
+        display: block;
+        height: 65px;
+        width: 35px;
+    }
+
+}
+
+.slick-next {
+    right: -100px;
+    [dir="rtl"] & {
+        left: -25px;
+        right: auto;
+    }
+    &:before {
+        content: '';
+        background:url('../img/right-arrow-red.png');
+        display: block;
+        height: 65px;
+        width: 35px;
+        transition: 0.3s;
+    }
+        &.slick-disabled:before {
+        content: '';
+        background:url('../img/right-disabled.png');
+        display: block;
+        height: 65px;
+        width: 35px;
+    }
+}
+
+*/

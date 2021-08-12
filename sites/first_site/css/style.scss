@@ -1,0 +1,63 @@
+@import "null.scss";
+@import "bpoins.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@font-face {
+ font-family: "Helvetica";
+ src: url("/fonts/Helvetica.otf") format("otf");
+ font-weight: 400;
+}
+@font-face {
+ font-family: "HelveticaRoman";
+ src: url("/fonts/HelveticaRoman.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/fonts/HelveticaNeueLTPro-Cn.eot?#iefix') format('embedded-opentype'),  url('/fonts/HelveticaNeueLTPro-Cn.otf')  format('opentype'),
+	     url('/fonts/HelveticaNeueLTPro-Cn.woff') format('woff'), url('/fonts/HelveticaNeueLTPro-Cn.ttf')  format('truetype'), url('HelveticaNeueLTPro-Cn.svg#HelveticaNeueLTPro-Cn') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {//ultralight
+  font-family: 'Helvetica';
+  src: url('/fonts/HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),  url('/fonts/HelveticaNeueCyr-UltraLight.otf')  format('opentype'),
+	     url('/fonts/HelveticaNeueCyr-UltraLight.woff') format('woff'), url('/fonts/HelveticaNeueCyr-UltraLight.ttf')  format('truetype'), url('HelveticaNeueCyr-UltraLight.svg#HelveticaNeueCyr-UltraLight') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+.scrollup{
+width:40px;
+height:40px;
+opacity:0.3;
+position:fixed;
+bottom:50px;
+right:100px;
+display:none;
+z-index: 1000;
+text-indent:-9999px;
+background: url('../img/icons/icon_top.png') no-repeat;
+}
+
+//Спрятать скролл
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+
+html {
+	
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+//----------------------------------------------
+
+@import "page_one.scss";
+@import "page_two.scss";
+@import "page_three.scss";
+@import "page_four.scss";
+@import "page_five.scss";
+

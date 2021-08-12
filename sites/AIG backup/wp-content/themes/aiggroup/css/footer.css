@@ -1,0 +1,321 @@
+/*Включает в себя стили: Страница Контакты, Страница Письмо директору (page-callBack), сам футер, страница 404*/
+
+/*Стилизация футера*/
+.main_footer{
+	width: 100%;
+	background: #2e2e2e;
+	color: #818181;
+	margin-top:50px;
+	padding: 30px 0;
+}
+.main_footer .wrapper{
+	display: flex;
+}
+.main_footer .wrapper>div{
+	  padding-right: 25px;
+	  width: 20%;
+}
+.main_footer .wrapper>div>p{
+	  padding-bottom: 25px;
+}
+.main_footer .wrapper>div:last-child {  
+	 width: 35%;
+}
+.main_footer .wrapper div h4{
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.main_footer .wrapper div .title-h4 {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.main_footer .wrapper div ul{
+	list-style: none;
+	padding-left: 0;
+}
+.main_footer .wrapper div ul li{
+	padding-bottom: 10px;
+}
+.main_footer .wrapper div ul li a{
+	color: #818181;
+	text-decoration: underline;
+}
+.main_footer .wrapper div:last-child {  
+	 padding-right: 0;
+}
+.main_footer .wrapper div:last-child h4{  
+	margin-bottom: 15px;
+}
+.main_footer .wrapper div:last-child input{  
+	 border: 1px solid #818181;
+	 border-radius: 5px;
+	 padding: 10px 20px;
+	 background: #2e2e2e;
+	 width: 80%;
+	 margin-bottom:20px;
+	 color: #fff;
+}
+.main_footer .wrapper div:last-child input::placeholder {  
+	 color: #818181;
+}
+.main_footer .wrapper div:last-child input[type=submit]{
+	 border: none;
+	 border-radius: 5px;
+	 padding: 10px 40px;
+	 background: #ff8e00;
+	 color: #fff;
+	 text-transform: uppercase;
+	 cursor: pointer;
+}
+.main_footer .wrapper div .social_network{
+	margin-top: 15px;
+}
+.main_footer .wrapper div .social_network_href li{
+	display: inline-block;
+}
+.main_footer .wrapper div .social_network_href li a{
+	color: #00b8ff;
+	font-size: 21px;
+	padding: 5px 10px;
+	border: 2px solid #00b8ff;
+	height: 37px;
+	width: 37px;
+}
+@media screen and (max-width: 1250px){
+	.main_footer .wrapper {
+		padding: 0 30px;
+	}
+}
+@media screen and (max-width: 850px){
+	.main_footer .wrapper div:first-child {  
+	display:none;
+	}
+	.main_footer .wrapper>div {
+		width: 25%;
+	}
+}
+@media screen and (max-width: 570px){
+	.main_footer .wrapper div:nth-child(2), .main_footer .wrapper div:nth-child(3) {  
+	display:none;
+	}
+	.main_footer .wrapper>div:last-child {
+    width: 100%;
+    text-align: center;
+	}
+	.main_footer .wrapper div:last-child input {
+	width: 71%;
+	}
+}
+/*Стилизация страницы контакты*/
+.main_title{
+	font-size: 32px;
+	line-height: 42px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.sub_title{
+	font-size: 16px;
+	line-height: 26px;
+	color: #fff;
+	font-weight: lighter;
+}
+.contact_page .office_info{
+	margin: 100px 0;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact_page .office_info div{
+	width: 20%;
+	border: 2px solid #f4f4f4;
+	padding: 2%;
+}
+.contact_page .office_info div span{
+	color: #152136;
+	font-size: 24px;
+	line-height: 26px;
+}
+.contact_page .office_info div span i{
+	color: #ff9400;
+	font-size: 40px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+}
+.contact_page .office_info div .virtual_reception{
+	text-decoration: underline;
+}
+.contact_page .office_info div p{
+	color: #5f708f;
+	padding: 20px 0 0;
+}
+.contact_page .form_block{
+	display: flex;
+	flex-direction: row;
+}
+.contact_page .feedback{
+	margin-left: 50px;
+}
+.contact_page .feedback .teg{
+	color: #ff9400;
+	padding: 45px 0 20px;
+}
+.contact_page .feedback .form_title{
+	color: #152136;
+	font-size: 54px;
+	line-height: 70px;
+	margin-bottom: 30px;
+}
+.contact_page .feedback input[type='text'], .contact_page .feedback textarea {
+	width: 90%;
+	padding: 26px 41px;
+	border: none;
+	background: #f6f6f6;
+	border-radius: 8px;
+	margin-bottom: 25px;
+}
+.contact_page .feedback textarea{
+	height: 184px;
+}
+.contact_page .feedback input[type='text']::placeholder, .contact_page .feedback textarea::placeholder {
+	color: #8291ab;
+}
+@media screen and (max-width: 1250px){
+	.contact_page .feedback input[type='text'], .contact_page .feedback textarea {
+		width: 80%;
+	}
+	.contact_page iframe{
+		padding-left: 20px;
+	}
+}
+@media screen and (max-width: 860px){
+	.contact_page .office_info div {
+		width: 40%;
+		margin: 1%;
+	}
+	.contact_page .office_info {
+		justify-content: center;
+	}
+		.contact_page .feedback input[type='text'], .contact_page .feedback textarea {
+		width: 70%;
+	}
+	.contact_page .feedback .form_title {
+		font-size: 40px;
+	}
+}
+@media screen and (max-width: 665px){
+	
+	.contact_page .form_block {
+		flex-direction: column-reverse;
+	}
+	.contact_page .feedback {
+		margin-bottom: 50px;
+	}
+	.contact_page iframe {
+		width: 90%;
+	}
+	.contact_page .office_info{
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 480px){
+	.contact_page .office_info div {
+		width: 90%;
+	}
+	.contact_page .feedback {
+    margin-left: 15px;
+	}
+}
+/*Стилизация Страницы обратной связи*/
+.page_callBack .text_blok{
+	color: #5f708f;
+	max-width: 770px;
+	margin: 0 auto;
+}
+.page_callBack .text_blok h2{
+	color: #152136;
+	font-size: 26px;
+	padding-bottom: 20px;
+}
+.page_callBack .text_blok p{
+	line-height: 26px;
+}
+.page_callBack .text_blok .to_whom{
+	font-weight: 600;
+	padding: 30px 0;
+	line-height: 26px;
+}
+.page_callBack .form_blok{
+	max-width: 770px;
+	background: #fff3ea;
+	margin: 0 auto;
+}
+.page_callBack .form_blok form{
+	padding: 50px;
+}
+.page_callBack .form_blok input[type='text'], .page_callBack .form_blok textarea{
+	width: 90%;
+	padding: 23px 28px;
+	border: unset;
+	background: #fff;
+	margin-bottom: 20px;
+}
+.page_callBack .form_blok input::placeholder, .page_callBack .form_blok textarea::placeholder{
+	color: #5f708f;
+}
+@media screen and (max-width: 800px){
+	.page_callBack .form_blok {
+		margin: 0 20px;
+	}
+	.page_callBack .text_blok {
+		padding: 0 20px;
+	}
+}
+@media screen and (max-width: 500px){
+	.page_callBack .form_blok form {
+		padding: 15px;
+	}
+	.page_callBack .form_blok input[type='text'], .page_callBack .form_blok textarea {
+		width: 80%;
+	}
+}
+/*Стилизация Страницы 404*/
+.page_404{
+	display: flex;
+	color: #5f708f;
+}
+.page_404 .left_404 h1{
+	margin: 150px 0 20px;
+	font-size: 70px;
+	color: #152136;
+	line-height: 80px;
+}
+.page_404 .right_404 img{
+	max-width:700px;
+}
+.global_block{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	padding-bottom: 50px;
+	margin-bottom: -50px;
+	background: url('/wp-content/uploads/2019/06/404bg.png');
+	background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right top;
+	position: relative;
+}
+.global_block .img_404_1{
+	position: absolute;    
+	top: 400px;
+    left: 70px;
+}
+.global_block .img_404_2{
+	position: absolute;    
+    top: -40%;
+    height: auto;
+    left: -40px;
+    width: 200px;
+}

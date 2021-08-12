@@ -1,0 +1,101 @@
+.page-four{
+	height: 1665px;
+	//background: url("../img/ServicesBackgroundtransp.jpg.png"), url("../img/ServicesBackground.jpg") no-repeat;
+	//background-position:  top, bottom;
+	background:url("../img/Post5.png") top no-repeat;
+	padding-top: 250px;
+	display: flex;
+	flex-direction: column;
+
+}
+//-----------------------------
+.page-four-content{
+	margin-bottom: 210px;
+	text-align: center;
+}
+
+.page-four-title{
+		letter-spacing: 0.020em;
+		font-size: 34pt;
+		font-family: Helvetica;
+		color:#fff;
+}
+.page-four-subtitle{
+		letter-spacing: 0.020em;
+		font-size: 16pt;
+		line-height: 40px;
+		color: #777777;
+		font-family: Merriweather ;
+		font-weight: 300;
+		font-style: italic;
+		margin-bottom: 45px
+}
+//----------------------------
+.page-four-cards{
+	display: flex;
+	justify-content: space-evenly;
+	.card{
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+
+	text-align: center;
+
+	&__avatar{
+		display: flex;
+		justify-content: center;
+		width: 170px;
+		height: 170px;
+		border: 5px solid #fff;
+		border-radius: 50%;
+		margin-bottom: 40px;
+		&>img{
+			align-self:center;
+			max-width: 100%;
+		}
+	}
+	&__holder{
+		font-family: Helvetica;
+		line-height: 26px;
+		font-size: 24px;
+		letter-spacing: 0.020em;
+		color: #fff;
+		font-weight: lighter;
+		margin-bottom: 20px;
+	}
+	&__info{
+		font-weight: lighter;
+		font-family: HelveticaRoman;
+		color: #383838;
+		font-size: 13px;
+		letter-spacing: 0.020em;
+		line-height: 15px;
+	}
+}
+
+}
+
+
+.page-four-button{
+	align-self:center;
+	margin-top: 475px;
+	&__item{
+		background:#fff;
+		color: #1d1e1f;
+		display: block;
+		font-family: Helvetica;
+		font-size: 16px;
+		line-height: 65px;
+		text-align: center;
+		font-weight: 700;
+		height: 65px;
+		width: 220px;
+		//border: 1px solid #121212;
+		transition: 1s;
+		&:hover{
+			color: #fff;
+			border: 1px solid #fff;
+			background:#181818;
+		}
+	}
+}

@@ -1,0 +1,272 @@
+	@import "null.scss"; //файл обнуления стилей
+@import "mixins.scss"; //файл с миксинами и функциями
+@import "../fonts/font.scss"; //файл с подключением шрифтов
+@import "slider.scss";
+//Спрятать скролл
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+
+html {
+	font-family: 'Roboto Mono';
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+//----------------------------------------------
+
+
+body{
+	overflow-x: hidden;
+}
+h2{
+	font-family: 'Roboto Mono';
+	letter-spacing: 10px;
+	color:#fff;
+	font-size: 50px;
+}
+.scene{
+	
+	margin:0;
+	padding:0;
+	position: relative;
+	left: 0;
+	top:0;
+	bottom: 0;
+	right: 0;
+	min-height: 80vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 350px;
+	.layer{
+			margin:0;
+			z-index: -1;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 110%;
+			height: 105%;
+			background: url('../img/1_WO60BLVKBc6sOrOEE61cxA.jpeg') center no-repeat;
+			background-size: cover;
+
+
+
+
+		}
+
+}
+
+
+.page_two{
+	width: 100%;
+	height: 600px;
+	background: #fff;
+	h2{
+		padding-left: 250px;
+		color:#000;
+	}
+	.row{
+		align-items: center;
+		
+		.col{
+			
+			.images{
+				&:before{
+					content:'↑';
+					position: absolute;
+					right: 300px;
+					top:0;
+					font-size: 100px;
+					color:#b1b1b1a6;transition: 0.3s;
+
+				}
+				&:after{
+					content:'↓';
+					position: absolute;
+					right: 300px;
+					bottom:20px;
+					font-size: 100px;
+					color:#000;transition: 0.3s;
+
+				}
+				height: 600px;
+				overflow-y: scroll;
+				
+
+				&::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */}
+				
+		
+				&__item{
+
+					width: 300px;
+					border-left: 7px solid black;
+					border-right: 7px solid black;
+					border-bottom:10px solid black;
+					&:last-child{
+						border-bottom: 2px solid black;
+					}
+					
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	
+}
+.page_three{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background: url('../img/post-147-01.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	h2{
+		color:#fff;
+	}
+
+	.content{
+		
+		width:100%;
+		background-color: rgba(255,255,255,0.6);
+		p{
+
+			font-family: 'Dancing Script';
+			font-size: 20px;
+			color: #000;
+			padding: 20px;
+		}
+	}
+}
+
+.page_four{
+	min-width: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	padding-top:100px;
+
+	background: #fff;
+	h2{
+		margin-bottom: 150px;
+		color:#000;
+	}
+
+	.slider{
+		margin-bottom: 100px;
+		width: 500px;
+		div{
+			height: 300px;
+			img{
+			width: 100%;
+		}
+		}
+		
+	}
+
+	}
+
+
+
+
+
+
+
+.images-2{
+				&:before{
+					content:'↑';
+					position: absolute;
+					right: 300px;
+					top:0;
+					font-size: 100px;
+					color:#000;transition: 0.3s;
+
+				}
+				&:after{
+					content:'↓';
+					position: absolute;
+					right: 300px;
+					bottom:20px;
+					font-size: 100px;
+					color:#b1b1b1a6;transition: 0.3s;
+
+				}
+				height: 600px;
+				overflow-y: scroll;
+				
+
+					&::-webkit-scrollbar { /* chrome based */
+	    width: 0px;  /* ширина scrollbar'a */
+	    background: transparent;  /* опционально */}
+				
+		
+				&__item{
+
+					width: 300px;
+					border-left: 7px solid black;
+					border-right: 7px solid black;
+					border-bottom:10px solid black;
+					&:last-child{
+						border-bottom: 2px solid black;
+					}
+					
+					img{
+						width: 100%;
+					}
+				}
+
+}
+.images-3{
+				&:before{
+					content:'↑';
+					position: absolute;
+					right: 300px;
+					top:0;
+					font-size: 100px;
+					color:#000;
+					transition: 0.3s;
+
+				}
+				&:after{
+					content:'↓';
+					position: absolute;
+					right: 300px;
+					bottom:20px;
+					font-size: 100px;
+					color:#000;
+					transition: 0.3s;
+
+				}
+				height: 600px;
+				overflow-y: scroll;
+				
+
+					&::-webkit-scrollbar { /* chrome based */
+	    width: 0px;  /* ширина scrollbar'a */
+	    background: transparent;  /* опционально */}
+				
+		
+				&__item{
+
+					width: 300px;
+					border-left: 7px solid black;
+					border-right: 7px solid black;
+					border-bottom:10px solid black;
+					&:last-child{
+						border-bottom: 2px solid black;
+					}
+					
+					img{
+						width: 100%;
+					}
+				}
+
+}

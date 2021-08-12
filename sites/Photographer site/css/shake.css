@@ -1,0 +1,28 @@
+
+
+.shake {
+animation: shake 5s infinite;
+
+}
+
+
+@-webkit-keyframes shake {
+0%{
+	transform: translate(0px,0);
+}
+29%{
+	transform: translate(0px,0);
+}
+30%{
+	transform: translate(-5px,0);
+}
+32%{
+	transform: translate(5px,0);
+}
+33%{
+	transform: translate(0px,0);
+}
+100%{
+	transform: translate(0px,0);
+}
+}
